@@ -28,3 +28,15 @@ Single Circular Linked List
     Same as the single LL instead of null address in the end we have the address of the head and vice versa
 Double Circular Linked List 
     Same as the double LL instead of null address in the end we have the address of the head and vice versa
+Sorting
+1.Heap Sort  
+  >>Max Heap
+  >>Min Heap
+2.Quick Sort
+>With the comparicon of pivot element with each element the swaping is carried out
+3.Insertion Sort
+>here sorted part is compared with unsoreted part
+4.Merge sort
+>Divide until we get single element and then conquer to sort
+5.Bubble Sort
+>Comparing a single element with all the elements at a time
