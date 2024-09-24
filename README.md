@@ -141,6 +141,33 @@ int main() {
             arr[j+1]=key;
      } 
 
+     Linear Searching
+     #include <iostream>
+using namespace std;
+int main() {
+    int arr[10],i,index,num;
+    cout<<"Enter 10 numbers";
+    for(i=0;i<10;i++)
+    cin>>arr[i];
+    cout<<"\nEnter the number to search";
+    cin>>num;
+    for(i=0;i<10;i++)
+    {
+        if(arr[i]==num)
+        {
+            index=i;
+             cout<<"Number found"<<index;
+             cout<<endl;
+            break;
+            }
+            else{
+                cout<<"number not found"<<endl;
+                break;
+            }
+    }
+    return 0;
+}
+
  }
 }
 
