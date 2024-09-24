@@ -81,3 +81,66 @@ int main() {
      }
  }
 }
+Bubble sort
+#include <iostream>
+
+int main() {
+ void bubble(int arr[],int n)
+  {
+     int i,j;
+     for(i=0;i<n-1;i++)
+     {
+        for(j=0,j<n-i-1;j++)
+        {
+            if(arr[j]>arr[j+1])
+           
+        swap(&arr[j],&arr[j+1]);
+        }
+     }
+ }
+}
+Optimised approach
+#include <iostream>
+
+int main() {
+ void bubble(int arr[],int n)
+  {
+     int i,j;
+     bool swap
+     for(i=0;i<n-1;i++)
+     {
+         swap=false;
+        for(j=0,j<n-i-1;j++)
+        {
+            if(arr[j]>arr[j+1])
+            {
+            swap(&arr[j],&arr[j+1]);
+            swap=true;
+            }
+     } 
+     if(swap==false)
+     break;
+ }
+}
+Insertion Sort
+#include <iostream>
+
+int main() {
+ void insertionsort(int arr[],int n)
+  {
+     int i,key,j;
+     for(i=0;i<n;i++)
+     {
+        key=arr[i];
+        j=i-1;
+        while(j>=0&&arr[j]>key)
+        {
+            arr[j+1]=arr[j];
+            j=j-1;
+            }
+            arr[j+1]=key;
+     } 
+
+ }
+}
+
