@@ -191,3 +191,18 @@ int binarySearch(int a[],int first,int last,int search_num){
         return -1;
     }
 }
+Trivailing Zero
+#include <iostream>
+using namespace std;
+
+int main(){
+    int n;
+    cin>>n;
+    int no_of_zero=0;
+    while(n!=0){
+        n=n/5;
+        no_of_zero=no_of_zero+n;
+    }
+    cout<<" No of trivailing zeroes:"<<no_of_zero;
+    return 0;
+}
