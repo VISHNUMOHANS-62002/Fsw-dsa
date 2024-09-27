@@ -170,4 +170,24 @@ int main() {
 
  }
 }
+Binary Search
+#include <iostream>
+using namespace std;
 
+int binarySearch(int a[],int first,int last,int search_num){
+        int middle;
+        if(last>=first){
+            middle=(first+last)/2;
+            if(a[middle]==search_num){
+                return middle+1;
+            }
+            else if(a[middle]<search_num){
+                return binarySearch(a,middle+1,last,search_num);
+            }
+            else if(a[middle]>search_num){
+                return binarySearch(a,first,middle+1,search_num);
+            }
+        }
+        return -1;
+    }
+}
