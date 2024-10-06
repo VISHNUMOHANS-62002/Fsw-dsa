@@ -329,3 +329,37 @@ int main() {
     }
     return 0;
 }
+Equilibrium index
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int n;
+    cin>>n;
+    int a[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+    int totalsum=0;
+    for(int i=0;i<n;i++)
+    {
+         totalsum=totalsum+a[i];
+    }
+    int lhssum=0,flag=0;
+    for(int i=0;i<n;i++)
+    {
+        totalsum=totalsum-a[i];
+        if(lhssum==totalsum){
+            cout<<i<<endl;
+            flag=1;
+            break;
+        }
+        else{
+            lhssum=lhssum+a[i];
+        }
+    }
+    if(flag==0){
+        cout<<-1<<endl;
+    }
+    return 0;
+}
